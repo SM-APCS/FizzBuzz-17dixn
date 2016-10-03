@@ -7,16 +7,28 @@ package fizzbuzz;
 
 /**
  *
- * @author Mr. T - CHANGE TO YOUR NAME
+ * @author Nate Dix - CHANGE TO YOUR NAME
  * @class AP CSA
  */
-public class FizzBuzz {
-
+public class FizzBuzz 
+{
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    public static void main(String[] args)
+    {
+        for(int i =1;i<101;i++)
+        {
+            if(i%3==0&&i%5==0){
+            System.out.println("FizzBuzz");//detects if divisible by 3&5
+            }else if(i%3==0){
+                System.out.println("Fizz");//detects if divisible by 3
+            }else if(i%5==0){
+                System.out.println("Buzz");//detects if divisible by 5
+            }else{
+                System.out.println(i);
+            }
+        }
     }
     
 }
